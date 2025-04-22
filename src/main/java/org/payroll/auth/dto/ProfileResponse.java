@@ -4,14 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @AllArgsConstructor
-public class JwtResponse {
-    private String token;
-    private String refreshToken;
+public class ProfileResponse {
     private Long id;
     private String username;
     private String email;
-    private String roles;
+    private List<String> roles;
 }

@@ -32,3 +32,6 @@ jwt:
   secret: BF7FD11ACE545745B7BA1AF98B6F156D127BC7BB544BAB6A4FD74E4FC7
   expiration: 86400000  # Access token : 15 min
   refreshExpiration: 604800000
+
+#cors:
+#  allowed-origins: "http://localhost:4200"

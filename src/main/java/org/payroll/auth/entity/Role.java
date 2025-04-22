@@ -2,13 +2,15 @@ package org.payroll.auth.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.payroll.auth.enums.RoleEnum;
 
 @Entity
 @Table(name = "roles")
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class Role {
@@ -17,6 +19,6 @@ public class Role {
     private Integer id;
 
     @Enumerated(EnumType.STRING)
-    @Column(length = 20,unique = true,nullable = false)
+    @Column(length = 20, unique = true, nullable = false)
     private RoleEnum name;
 }

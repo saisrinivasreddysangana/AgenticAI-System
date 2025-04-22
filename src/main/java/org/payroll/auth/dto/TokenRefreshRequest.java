@@ -1,8 +1,12 @@
 package org.payroll.auth.dto;
 
-import lombok.Data;
+import jakarta.validation.constraints.NotBlank;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 public class TokenRefreshRequest {
+    @NotBlank(message = "Refresh token is required")
     private String refreshToken;
 }
